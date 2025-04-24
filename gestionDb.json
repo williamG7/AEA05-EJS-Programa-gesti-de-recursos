@@ -1,0 +1,145 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nombre": "Ana",
+            "email": "ana@email.com",
+            "rol": "admin"
+        },
+        {
+            "id": 2,
+            "nombre": "Luis",
+            "email": "luis@email.com",
+            "rol": "usuario"
+        },
+        {
+            "id": 3,
+            "nombre": "Sofía",
+            "email": "sofia@email.com",
+            "rol": "usuario"
+        },
+        {
+            "id": 4,
+            "nombre": "Carlos",
+            "email": "carlos@email.com",
+            "rol": "usuario"
+        },
+        {
+            "id": 5,
+            "nombre": "Elena",
+            "email": "elena@email.com",
+            "rol": "admin"
+        }
+    ],
+    "reservas": [
+        {
+            "id": 1,
+            "nombre" : "reserva1",
+            "usuarioId": 2,
+            "recursoId": 1,
+            "fecha": "2025-04-25T10:00:00"
+        },
+        {
+            "id": 2,
+            "nombre" : "reserva2",
+            "usuarioId": 3,
+            "recursoId": 2,
+            "fecha": "2025-04-26T15:30:00"
+        },
+        {
+            "id": 3,
+            "nombre" : "reserva3",
+            "usuarioId": 4,
+            "recursoId": 3,
+            "fecha": "2025-04-27T09:00:00"
+        },
+        {
+            "id": 4,
+            "nombre" : "reserva4",
+            "usuarioId": 1,
+            "recursoId": 4,
+            "fecha": "2025-04-28T13:00:00"
+        },
+        {
+            "id": 5,
+            "nombre" : "reserva5",
+            "usuarioId": 5,
+            "recursoId": 5,
+            "fecha": "2025-04-29T16:00:00"
+        }
+    ],
+    "notificaciones": [
+        {
+            "id": 1,
+            "nombre": "notificacion1",
+            "usuarioId": 2,
+            "mensaje": "Tu reserva fue confirmada.",
+            "leida": false
+        },
+        {
+            "id": 2,
+            "nombre": "notificacion2",
+            "usuarioId": 3,
+            "mensaje": "El recurso reservado no estará disponible.",
+            "leida": true
+        },
+        {
+            "id": 3,
+            "nombre": "notificacion3",
+            "usuarioId": 4,
+            "mensaje": "Recuerda tu reserva de mañana.",
+            "leida": false
+        },
+        {
+            "id": 4,
+            "nombre": "notificacion4",
+            "usuarioId": 1,
+            "mensaje": "Nueva reserva asignada.",
+            "leida": true
+        },
+        {
+            "id": 5,
+            "nombre": "notificacion5",
+            "usuarioId": 5,
+            "mensaje": "Tu reserva ha sido cancelada.",
+            "leida": false
+        }
+    ],
+    "recursos": [
+        {
+            "id": 1,
+            "nombre": "recurso1",
+            "fechaInicio": "10:25",
+            "fechaFin": "12:59",
+            "estado": "activo"
+        },
+        {
+            "id": 2,
+            "nombre": "recurso2",
+            "fechaInicio": "9:20",
+            "fechaFin": "12:30",
+            "estado": "activo"
+        },
+        {
+            "id": 3,
+            "nombre": "recurso3",
+            "fechaInicio": "5:45",
+            "fechaFin": "1:39",
+            "estado": "inactivo"
+        },
+        {
+            "id": 4,
+            "nombre": "recurso4",
+            "fechaInicio": "1:00",
+            "fechaFin": "4:49",
+            "estado": "activo"
+        },
+        {
+            "id": 5,
+            "nombre": "recurso5",
+            "fechaInicio": "3:50",
+            "fechaFin": "6:59",
+            "estado": "inactivo"
+        }
+    ]
+}
