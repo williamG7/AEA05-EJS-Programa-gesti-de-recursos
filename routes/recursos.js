@@ -8,7 +8,7 @@ const readData = () => {
         const data = fs.readFileSync("./recursosDb.json");
         return JSON.parse(data);
     } catch (error) {
-        console.error(error);
+        console.error(error); 
     }
 };
 
