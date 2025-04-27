@@ -5,7 +5,7 @@ const routes = express.Router();
 
 const readData = () => {
     try {
-        const data = fs.readFileSync("./recursosDb.json");
+        const data = fs.readFileSync("./gestionDb.json");
         return JSON.parse(data);
     } catch (error) {
         console.error(error); 
@@ -14,7 +14,7 @@ const readData = () => {
 
 const writeData = (data) => {
     try {
-        fs.writeFileSync("./recursosDb.json", JSON.stringify(data));
+        fs.writeFileSync("./gestionDb.json", JSON.stringify(data));
     } catch (error) {
         console.error(error);
     }

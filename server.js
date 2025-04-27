@@ -4,7 +4,7 @@ import notificacionesRoutes from './routes/notificaciones.js'
 import reservasRoutes from './routes/reservas.js'
 import usuariosRoutes from './routes/usuarios.js'
 import methodOverride from 'method-override'
-
+ 
 const app = express();
 app.use(express.json());
 app.use(express.static("public")); // carpeta para el css
