@@ -21,7 +21,7 @@ const writeData = (data) => {
 };
 
 routes.get('/usuarios',(req, res) =>{
-    const user = {name: "william g"}
+    const user = {nombre: "william g"}
     const htmlMessage = "lista de usuarios"
     const data = readData()
     res.render("usuarios",{user, htmlMessage, data})
@@ -30,7 +30,7 @@ routes.get('/usuarios',(req, res) =>{
 
 routes.get('/usuarios/:id',(req, res) =>{
     const data = readData()
-    const user = {name: "william G"}
+    const user = {nombre: "william G"}
     const id = parseInt(req.params.id);
     const recurso = data.recursos.find((recurso) => recurso.id === id)
     routes.render("usuariosDetalle",{user, recurso})
