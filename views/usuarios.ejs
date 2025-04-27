@@ -8,12 +8,8 @@
  </head>
  <body>
     <header>
-        <h1>
-            Gestion de usuarios por <%= user.nombre %>! 
-        </h1>
-        <h2>
-            <%- htmlMessage%>
-        </h2>
+        <h1>Gestion de usuarios por <%= user.nombre %>! </h1>
+        <h2><%- htmlMessage%> </h2>
     </header>
     <main>
         <section>
@@ -26,6 +22,7 @@
                         <span>email: <%=usuario.email%></span>
                         <span>rol: <%=usuario.rol%></span>
                         <span><a href="/views/usuarios.ejs/<%=usuario.id%>">detalle del usuario</a></span>
+                        <span><a href="/views/formularioUsuarios.html" class="editar-link">Editar usuario</a></span>
                     </li>
                 })
             </ul>
