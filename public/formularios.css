@@ -33,6 +33,23 @@ h2 a:hover {
     text-decoration: underline;
 }
 
+.boton-volver {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.boton-volver a {
+    color: #2c7be5;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.boton-volver a:hover {
+    text-decoration: underline;
+}
+
 .forma-comun {
     background-color: #fff;
     padding: 25px;
