@@ -10,12 +10,13 @@ app.use(express.json());
 app.use(express.static("public")); // carpeta para el css
 app.use(express.urlencoded({extended: true}))
 app.use(methodOverride('_method'))
+app.use(express.static('views'));
 
 app.set('view engine','ejs');// motor ejs
 app.set('views', './views'); // archivos ejs
 
 // mensaje principal
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
     res.render('home');
 })
 

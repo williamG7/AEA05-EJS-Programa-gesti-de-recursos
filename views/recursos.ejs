@@ -16,14 +16,14 @@
         <section>
             <h2> Lista de recursos</h2>
             <ul class="recurso-lista">
-                <% data.recursos.forEach(recurso => { %>
+                <% data.recursos.forEach(recurso => { %> 
                 <li class="recurso-item">
                     <strong><%=recurso.nombre%></strong>
                     <span>fechaInicio: <%= recurso.fechaInicio %></span>
                     <span>fechaFin: <%= recurso.fechaFin %></span>
                     <span>estado: <%= recurso.estado %></span>
-                    <span><a href="/views/recursos.ejs/<%=recurso.id%>">detalle del recurso</a></span>
-                    <a href="/views/recursos.ejs/<%=recurso.id%>/edit" class="editar-link">Editar producto</a>
+                    <span><a href="/recursos/<%=recurso.id%>">detalle del recurso</a></span>
+                    <a href="/recursos/<%=recurso.id%>/edit" class="editar-link">Editar producto</a>
                 </li>
             <%}) %>
             </ul>

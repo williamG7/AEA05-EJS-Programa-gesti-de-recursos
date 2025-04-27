@@ -10,7 +10,7 @@ const readData = () => {
     } catch (error) {
         console.error(error); 
     }
-};
+}; 
 
 const writeData = (data) => {
     try {
@@ -20,7 +20,7 @@ const writeData = (data) => {
     }
 };
 
-routes.get('/recursos',(req, res) =>{
+routes.get('/recursos.ejs',(req, res) =>{
     const user = {nombre: "william g"}
     const htmlMessage = "lista de recursos"
     const data = readData()
@@ -28,7 +28,7 @@ routes.get('/recursos',(req, res) =>{
 });
 
 
-routes.get('/recursos/:id',(req, res) =>{
+routes.get('/recursos.ejs/:id',(req, res) =>{
     const data = readData()
     const user = {nombre: "william G"}
     const id = parseInt(req.params.id);
