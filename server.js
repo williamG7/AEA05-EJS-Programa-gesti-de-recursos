@@ -90,6 +90,7 @@ app.get("/protected", (req, res) => {
     res.redirect("/home");
 });
 
+
 app.get("/home", (req, res) => {
     res.render("home");
 });
